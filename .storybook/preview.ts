@@ -10,8 +10,7 @@ import es from '@angular/common/locales/es';
 
 registerLocaleData(es);
 
-// Import ng-zorro styles
-import 'ng-zorro-antd/ng-zorro-antd.css';
+// Styles are loaded via CDN in main.ts
 
 
 
