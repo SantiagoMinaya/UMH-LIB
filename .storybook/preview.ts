@@ -4,8 +4,14 @@ import { importProvidersFrom } from '@angular/core';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideHttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { provideNzI18n, es_ES } from 'ng-zorro-antd/i18n';
+import { registerLocaleData } from '@angular/common';
+import es from '@angular/common/locales/es';
 
-// Styles are handled via main.ts previewHead configuration
+registerLocaleData(es);
+
+// Import ng-zorro styles
+import 'ng-zorro-antd/ng-zorro-antd.css';
 
 
 
@@ -24,6 +30,7 @@ const preview: Preview = {
       providers: [
         provideAnimations(),
         provideHttpClient(),
+        provideNzI18n(es_ES),
         importProvidersFrom(TranslateModule.forRoot()),
         TranslateService
       ]
