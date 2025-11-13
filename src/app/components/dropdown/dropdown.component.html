@@ -1,0 +1,78 @@
+<div class="dropdown-wrapper" [class.dropdown-open]="isOpen">
+  
+  <!-- Dropdown trigger -->
+  <button 
+    class="dropdown-trigger"
+    [class.dropdown-disabled]="disabled"
+    [disabled]="disabled"
+    [attr.aria-expanded]="isOpen"
+    [attr.aria-haspopup]="true"
+    (click)="toggle()"
+    (keydown.arrowDown)="open(); $event.preventDefault()"
+    (keydown.escape)="close()">
+    
+    <span class="dropdown-label">{{ selectedLabel || placeholder }}</span>
+    
+    <svg class="dropdown-arrow" width="16" height="16" viewBox="0 0 24 24">
+      <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+    </svg>
+  </button>
+  
+  <!-- Dropdown menu -->
+  <div 
+    class="dropdown-menu"
+    [class.dropdown-menu-visible]="isOpen"
+    role="listbox"
+    [attr.aria-label]="ariaLabel">
+    
+    <!-- Search input -->
+    <div class="dropdown-search" *ngIf="searchable">
+      <input 
+        type="text"
+        class="dropdown-search-input"
+        placeholder="Buscar..."
+        [(ngModel)]="searchTerm"
+        (input)="onSearch($event)"
+        (keydown.escape)="close()">
+    </div>
+    
+    <!-- Options -->
+    <div class="dropdown-options">
+      <button
+        *ngFor="let option of filteredOptions; let i = index"
+        class="dropdown-option"
+        [class.dropdown-option-selected]="option.value === selectedValue"
+        [class.dropdown-option-disabled]="option.disabled"
+        [disabled]="option.disabled"
+        role="option"
+        [attr.aria-selected]="option.value === selectedValue"
+        (click)="selectOption(option)"
+        (keydown.enter)="selectOption(option)"
+        (keydown.space)="selectOption(option); $event.preventDefault()">
+        
+        <span class="dropdown-option-text">{{ option.label }}</span>
+        
+        <svg 
+          *ngIf="option.value === selectedValue" 
+          class="dropdown-option-check" 
+          width="16" 
+          height="16" 
+          viewBox="0 0 24 24">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+        </svg>
+      </button>
+      
+      <!-- No options message -->
+      <div class="dropdown-no-options" *ngIf="filteredOptions.length === 0">
+        No se encontraron opciones
+      </div>
+    </div>
+  </div>
+  
+  <!-- Backdrop -->
+  <div 
+    class="dropdown-backdrop" 
+    *ngIf="isOpen"
+    (click)="close()">
+  </div>
+</div>

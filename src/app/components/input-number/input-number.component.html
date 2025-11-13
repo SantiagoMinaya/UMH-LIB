@@ -1,0 +1,21 @@
+<nz-form-item>
+        <nz-form-label *ngIf="label" [nzFor]="name" [nzRequired]="isRequired">
+            {{ label }}
+        </nz-form-label>
+        <nz-form-control [nzErrorTip]="parsearError((errorMessage??'') | translate)??''" [nzValidateStatus]="ngControl?.control!">
+            <nz-input-number
+                [ngModel]="value"
+                (ngModelChange)="onValueChange($event)"
+                [nzPlaceHolder]="placeholder"
+                [nzPrecision]="precision"
+                [nzStep]="step"
+                [nzMin]="minValue"
+                [nzMax]="maxValue"
+                [nzId]="name"
+                [nzDisabled]="disabled"
+                [nzFormatter]="formatterData"
+                [nzParser]="parserData"
+                class="input-ancho"
+            ></nz-input-number>
+        </nz-form-control>
+    </nz-form-item>

@@ -1,0 +1,12 @@
+{
+  "tsconfig": "./tsconfig.doc.json",
+  "output": "./documentation/",
+
+  "name": "UMH Components Documentation",
+  "theme": "material",
+  "port": 8084,
+  "disableCoverage": true,
+  "disableGraph": true,
+  "disableSearch": false,
+  "minimal": true
+}

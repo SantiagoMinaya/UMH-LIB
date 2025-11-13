@@ -1,0 +1,16 @@
+<button 
+  [class]="'btn btn-' + variant + (disabled ? ' btn-disabled' : '') + ' btn-animated'"
+  [disabled]="disabled"
+  [attr.aria-label]="text"
+  (click)="onClick()"
+  (dblclick)="onDoubleClick($event)">
+  <span class="btn-content">
+    @if (icon) {
+      <i [class]="'btn-icon ' + icon"></i>
+    }
+    <span class="btn-text">{{ text }}</span>
+    @if (loading) {
+      <span class="btn-spinner">⟳</span>
+    }
+  </span>
+</button>

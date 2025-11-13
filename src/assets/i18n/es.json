@@ -1,0 +1,11 @@
+{
+  "$$$_err_requerido_$$$": "Campo requerido",
+  "$$$_err_formato_email_$$$": "Formato de email inválido",
+  "$$$_no_llega_tam_minimo_de_caracteres_$$$": "No llega al tamaño mínimo de caracteres",
+  "$$$_supera_tam_maximo_de_caracteres_$$$": "Supera el tamaño máximo de caracteres",
+  "$$$_formato_erroneo_$$$": "Formato erróneo",
+  "$$$_no_llega_valor_minimo_$$$": "No llega al valor mínimo",
+  "$$$_supera_valor_maximo_$$$": "Supera el valor máximo",
+  "$$$_url_invalida_$$$": "URL inválida",
+  "$$$_cargando_$$$": "Cargando..."
+}

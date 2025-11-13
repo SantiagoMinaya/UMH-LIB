@@ -1,0 +1,139 @@
+.alert {
+  position: relative;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid transparent;
+  margin-bottom: 1rem;
+  overflow: hidden;
+
+  &.alert-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .alert-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .alert-icon {
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+
+    .icon {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }
+
+  .alert-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .alert-title {
+    margin: 0 0 0.25rem 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+  }
+
+  .alert-message {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  .alert-close {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .alert-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    .alert-progress-bar {
+      height: 100%;
+      background-color: currentColor;
+      animation: progress linear;
+      transform-origin: left;
+    }
+  }
+
+  // Variantes
+  &.alert-success {
+    background-color: #f0fdf4;
+    border-color: #bbf7d0;
+    color: #166534;
+
+    .alert-progress-bar {
+      background-color: #22c55e;
+    }
+  }
+
+  &.alert-error {
+    background-color: #fef2f2;
+    border-color: #fecaca;
+    color: #dc2626;
+
+    .alert-progress-bar {
+      background-color: #ef4444;
+    }
+  }
+
+  &.alert-warning {
+    background-color: #fffbeb;
+    border-color: #fed7aa;
+    color: #d97706;
+
+    .alert-progress-bar {
+      background-color: #f59e0b;
+    }
+  }
+
+  &.alert-info {
+    background-color: #eff6ff;
+    border-color: #bfdbfe;
+    color: #2563eb;
+
+    .alert-progress-bar {
+      background-color: #3b82f6;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-0.5rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes progress {
+    from {
+      transform: scaleX(1);
+    }
+    to {
+      transform: scaleX(0);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<span 
+  [class]="'badge badge-' + variant + ' badge-' + size + (dot ? ' badge-dot' : '') + (outline ? ' badge-outline' : '') + (pulse ? ' badge-pulse' : '')"
+  [attr.aria-label]="ariaLabel || text">
+  
+  <!-- Dot indicator -->
+  @if (dot) {
+    <span class="badge-dot-indicator"></span>
+  }
+  
+  <!-- Icon -->
+  @if (icon) {
+    <svg class="badge-icon" width="12" height="12" viewBox="0 0 24 24">
+      <path [attr.d]="getIconPath()" fill="currentColor"/>
+    </svg>
+  }
+  
+  <!-- Text content -->
+  @if (!dot) {
+    <span class="badge-text">{{ text }}</span>
+  }
+  
+  <!-- Count -->
+  @if (count !== undefined) {
+    <span class="badge-count">
+      {{ count > maxCount ? maxCount + '+' : count }}
+    </span>
+  }
+  
+  <!-- Close button -->
+  @if (closable) {
+    <button 
+      class="badge-close"
+      type="button"
+      aria-label="Eliminar badge"
+      (click)="onClose()"
+      (keydown.enter)="onClose()"
+      (keydown.space)="onClose()">
+      <svg width="10" height="10" viewBox="0 0 24 24">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="currentColor"/>
+      </svg>
+    </button>
+  }
+</span>

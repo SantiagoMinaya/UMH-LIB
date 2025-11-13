@@ -1,0 +1,77 @@
+<div [class]="'tabs-wrapper tabs-' + orientation + (animated ? ' tabs-animated' : '')">
+  
+  <!-- Tab Navigation -->
+  <div class="tabs-nav" role="tablist">
+    <div class="tabs-nav-inner">
+      @for (tab of tabs; track tab.id || $index; let i = $index) {
+        <button 
+          class="tab-button"
+          [class.tab-active]="i === activeTab"
+          [class.tab-disabled]="disabled"
+          [disabled]="disabled"
+          [attr.aria-selected]="i === activeTab"
+          [attr.aria-controls]="'tabpanel-' + i"
+          [attr.id]="'tab-' + i"
+          role="tab"
+          (click)="onTabClick(i)"
+          (keydown.arrowLeft)="navigateTab(i - 1)"
+          (keydown.arrowRight)="navigateTab(i + 1)">
+          
+          <span class="tab-label">{{ tab.title || tab }}</span>
+          
+          @if (closable && tabs.length > 1) {
+            <button 
+              class="tab-close-btn"
+              aria-label="Cerrar pestaña"
+              (click)="onCloseTab(i); $event.stopPropagation()">
+              <svg width="14" height="14" viewBox="0 0 24 24">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="currentColor"/>
+              </svg>
+            </button>
+          }
+        </button>
+      }
+      
+      <!-- Active tab indicator -->
+      <div class="tab-indicator" [style.transform]="'translateX(' + (activeTab * 100) + '%)'" [style.width]="(100 / tabs.length) + '%'"></div>
+    </div>
+  </div>
+  
+  <!-- Tab Content -->
+  <div class="tabs-content">
+    @for (tab of tabs; track tab.id || $index; let i = $index) {
+      <div 
+        class="tab-panel"
+        [class.tab-panel-active]="i === activeTab"
+        [attr.id]="'tabpanel-' + i"
+        [attr.aria-labelledby]="'tab-' + i"
+        [attr.hidden]="i !== activeTab"
+        role="tabpanel">
+        
+        <div class="tab-panel-content">
+          <ng-content [select]="'[slot=tab-' + i + ']'"></ng-content>
+          
+          <!-- Default content if no projection -->
+          @if (!hasProjectedContent(i)) {
+            <div class="tab-default-content">
+              <h3>{{ tab.title || tab }}</h3>
+              <p>Contenido de la pestaña {{ tab.title || tab }}. Puedes añadir contenido usando <code>&lt;div slot="tab-{{ i }}"&gt;</code></p>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+  
+  <!-- Add tab button -->
+  @if (allowAddTab) {
+    <button 
+      class="tab-add-btn"
+      aria-label="Añadir nueva pestaña"
+      (click)="addTab('Nueva pestaña')">
+      <svg width="16" height="16" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="currentColor"/>
+      </svg>
+    </button>
+  }
+</div>

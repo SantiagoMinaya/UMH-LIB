@@ -7,7 +7,17 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:umh": "node dist/umh/server/server.mjs"
+    "serve:ssr:umh": "node dist/umh/server/server.mjs",
+    "docs:build": "compodoc -c .compodocrc.json",
+    "docs:serve": "compodoc -s -c .compodocrc.json",
+    "docs:build-serve": "compodoc -c .compodocrc.json -s",
+    "docs:generate-md": "node scripts/generate-component-docs.js",
+    "docs:watch": "node scripts/auto-docs.js",
+    "docs:full": "npm run docs:generate-md && npm run docs:build",
+    "storybook": "ng run umh:storybook",
+    "build-storybook": "ng run umh:build-storybook",
+    "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static",
+    "docs:hybrid": "npm run docs:generate-md && npm run docs:build && npm run storybook"
   },
   "prettier": {
     "printWidth": 100,
@@ -23,6 +33,8 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^20.3.10",
+    "@angular/cdk": "^20.2.12",
     "@angular/common": "^20.3.0",
     "@angular/compiler": "^20.3.0",
     "@angular/core": "^20.3.0",
@@ -31,23 +43,34 @@
     "@angular/platform-server": "^20.3.0",
     "@angular/router": "^20.3.0",
     "@angular/ssr": "^20.3.6",
+    "@ngx-translate/core": "^17.0.0",
+    "@ngx-translate/http-loader": "^17.0.0",
     "express": "^5.1.0",
+    "ng-zorro-antd": "^20.4.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^20.3.0",
     "@angular/build": "^20.3.6",
     "@angular/cli": "^20.3.6",
     "@angular/compiler-cli": "^20.3.0",
+    "@compodoc/compodoc": "^1.1.32",
+    "@storybook/addon-docs": "^10.0.6",
+    "@storybook/angular": "^10.0.6",
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.17.19",
+    "chokidar": "^4.0.3",
+    "gh-pages": "^6.1.1",
+    "glob": "^11.0.3",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "storybook": "^10.0.6",
     "typescript": "~5.9.2"
   }
 }

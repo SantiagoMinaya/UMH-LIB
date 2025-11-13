@@ -1,0 +1,289 @@
+
+> umh@0.0.0 build-storybook
+> ng run umh:build-storybook --output-dir=C:\Users\sminaya\AppData\Local\Temp\chromatic--11748-XM3dKp4nz69B
+
+[0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+
+1.1.32
+
+TypeScript version used by Compodoc : 5.9.2
+
+TypeScript version of current project : 5.9.2
+
+Node.js version : v22.21.0
+
+Operating system : Windows 10
+
+[12:37:39] [32mUsing configuration file : C:\Users\sminaya\umh-angular-workspace\umh\.compodocrc.json[39m
+[12:37:39] [32mUsing tsconfig file : C:\Users\sminaya\umh-angular-workspace\umh\.storybook\tsconfig.doc.json[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/index.html[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/main.server.ts[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/main.ts[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/server.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/styles.css[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/styles.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/app.config.server.ts[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/app.config.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/app.html[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/app.routes.server.ts[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/app.routes.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/app.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/app.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/assets/default-avatar.svg[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/extensions/extensions.module.ts[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/extensions/form-control-extensions.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/assets/i18n/en.json[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/assets/i18n/es.json[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/badge/badge.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/badge/badge.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/badge/badge.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/badge/badge.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/alert/alert.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/alert/alert.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/alert/alert.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/alert/alert.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/button/button.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/button/button.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/button/button.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/button/button.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/checkbox/checkbox.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/checkbox/checkbox.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/checkbox/checkbox.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/checkbox/checkbox.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/datepicker/datepicker.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/datepicker/datepicker.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/datepicker/datepicker.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/datepicker/datepicker.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/dropdown/dropdown.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/dropdown/dropdown.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/dropdown/dropdown.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/dropdown/dropdown.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/icon/icon.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/icon/icon.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/icon/icon.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/icon/icon.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-checkbox/input-checkbox.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-checkbox/input-checkbox.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-checkbox/input-checkbox.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-checkbox/input-checkbox.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-field/input-field.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-field/input-field.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-field/input-field.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-field/input-field.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-number/input-number.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-number/input-number.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-number/input-number.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-number/input-number.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-textarea/input-textarea.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-textarea/input-textarea.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-textarea/input-textarea.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-textarea/input-textarea.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/menu/menu.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/menu/menu.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/menu/menu.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/menu/menu.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/product-list/product-list.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/product-list/product-list.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/product-list/product-list.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/product-list/product-list.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/prueba/prueba.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/prueba/prueba.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/prueba/prueba.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/prueba/prueba.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/tabs/tabs.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/tabs/tabs.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/tabs/tabs.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/tabs/tabs.md[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/user-card/user-card.component.html[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/user-card/user-card.component.scss[39m
+[12:37:39] [36mIncluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/user-card/user-card.component.ts[39m
+[12:37:39] [33mExcluding      : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/user-card/user-card.md[39m
+[12:37:39] [32mSearching package.json file[39m
+[12:37:39] [32mpackage.json file found[39m
+[12:37:39] [32mProcessing package.json dependencies[39m
+[12:37:39] [32mSearching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files[39m
+[12:37:39] [32mREADME.md file found[39m
+[12:37:39] [33mError during C:\Users\sminaya\umh-angular-workspace\umh\CHANGELOG read[39m
+[12:37:39] [33mContinuing without CHANGELOG.md file[39m
+[12:37:39] [33mError during C:\Users\sminaya\umh-angular-workspace\umh\CONTRIBUTING read[39m
+[12:37:39] [33mContinuing without CONTRIBUTING.md file[39m
+[12:37:39] [33mError during C:\Users\sminaya\umh-angular-workspace\umh\LICENSE read[39m
+[12:37:39] [33mContinuing without LICENSE.md file[39m
+[12:37:39] [33mError during C:\Users\sminaya\umh-angular-workspace\umh\TODO read[39m
+[12:37:39] [33mContinuing without TODO.md file[39m
+[12:37:39] [32mGet dependencies data[39m
+[12:37:39] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/main.server.ts[39m
+[12:37:39] [36mfound          : bootstrap[39m
+[12:37:39] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/main.ts[39m
+[12:37:39] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/server.ts[39m
+[12:37:39] [36mfound          : browserDistFolder[39m
+[12:37:39] [36mfound          : app[39m
+[12:37:39] [36mfound          : angularApp[39m
+[12:37:39] [36mfound          : reqHandler[39m
+[12:37:39] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/app.config.server.ts[39m
+[12:37:39] [36mfound          : serverConfig[39m
+[12:37:39] [36mfound          : config[39m
+[12:37:39] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/app.config.ts[39m
+[12:37:39] [36mfound          : HttpLoaderFactory[39m
+[12:37:39] [36mfound          : appConfig[39m
+[12:37:39] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/app.routes.server.ts[39m
+[12:37:39] [36mfound          : serverRoutes[39m
+[12:37:39] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/app.routes.ts[39m
+[12:37:39] [36mfound          : routes[39m
+[12:37:39] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/app.ts[39m
+[12:37:39] [36mfound          : App[39m
+[12:37:40] [36m               : - imports:[39m
+[12:37:40] [36m               : 	- RouterOutlet[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/extensions/extensions.module.ts[39m
+[12:37:40] [36mfound          : ExtensionsModule[39m
+[12:37:40] [36m               : - imports:[39m
+[12:37:40] [36m               : 	- CommonModule[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/extensions/form-control-extensions.ts[39m
+[12:37:40] [36mfound          : AbstractControl[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/badge/badge.component.ts[39m
+[12:37:40] [36mfound          : BadgeComponent[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/alert/alert.component.ts[39m
+[12:37:40] [36mfound          : AlertComponent[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/button/button.component.ts[39m
+[12:37:40] [36mfound          : ButtonComponent[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/checkbox/checkbox.component.ts[39m
+[12:37:40] [36mfound          : CheckboxComponent[39m
+[12:37:40] [36m               : - imports:[39m
+[12:37:40] [36m               : 	- NzCheckboxModule[39m
+[12:37:40] [36m               : 	- CommonModule[39m
+[12:37:40] [36m               : 	- FormsModule[39m
+[12:37:40] [36m               : - providers:[39m
+[12:37:40] [36m               : 	- )[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/datepicker/datepicker.component.ts[39m
+[12:37:40] [36mfound          : DatepickerComponent[39m
+[12:37:40] [36m               : - imports:[39m
+[12:37:40] [36m               : 	- CommonModule[39m
+[12:37:40] [36m               : 	- FormsModule[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/dropdown/dropdown.component.ts[39m
+[12:37:40] [36mfound          : DropdownOption[39m
+[12:37:40] [36mfound          : DropdownComponent[39m
+[12:37:40] [36m               : - imports:[39m
+[12:37:40] [36m               : 	- CommonModule[39m
+[12:37:40] [36m               : 	- FormsModule[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/icon/icon.component.ts[39m
+[12:37:40] [36mfound          : IconComponent[39m
+[12:37:40] [36m               : - imports:[39m
+[12:37:40] [36m               : 	- CommonModule[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-checkbox/input-checkbox.component.ts[39m
+[12:37:40] [36mfound          : InputCheckboxComponent[39m
+[12:37:40] [36m               : - imports:[39m
+[12:37:40] [36m               : 	- CommonModule[39m
+[12:37:40] [36m               : 	- FormsModule[39m
+[12:37:40] [36m               : 	- NzFormModule[39m
+[12:37:40] [36m               : 	- NzCheckboxModule[39m
+[12:37:40] [36m               : 	- TranslateModule[39m
+[12:37:40] [36m               : - providers:[39m
+[12:37:40] [36m               : 	- )[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-field/input-field.component.ts[39m
+[12:37:40] [36mfound          : InputFieldComponent[39m
+[12:37:40] [36m               : - imports:[39m
+[12:37:40] [36m               : 	- NzFormModule[39m
+[12:37:40] [36m               : 	- NzInputModule[39m
+[12:37:40] [36m               : 	- TranslateModule[39m
+[12:37:40] [36m               : 	- NzAutocompleteModule[39m
+[12:37:40] [36m               : 	- CommonModule[39m
+[12:37:40] [36m               : 	- FormsModule[39m
+[12:37:40] [36m               : 	- NzIconModule[39m
+[12:37:40] [36m               : - providers:[39m
+[12:37:40] [36m               : 	- )[39m
+[12:37:40] [36mfound          : InputFieldAutocompleteOption[39m
+[12:37:40] [36mfound          : SearchAutocompleteData[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-number/input-number.component.ts[39m
+[12:37:40] [36mfound          : InputNumberModo[39m
+[12:37:40] [36mfound          : InputNumberComponent[39m
+[12:37:40] [36m               : - imports:[39m
+[12:37:40] [36m               : 	- NzFormModule[39m
+[12:37:40] [36m               : 	- NzInputNumberModule[39m
+[12:37:40] [36m               : 	- FormsModule[39m
+[12:37:40] [36m               : 	- CommonModule[39m
+[12:37:40] [36m               : 	- TranslateModule[39m
+[12:37:40] [36m               : - providers:[39m
+[12:37:40] [36m               : 	- )[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/input-textarea/input-textarea.component.ts[39m
+[12:37:40] [36mfound          : InputTextAreaComponent[39m
+[12:37:40] [36m               : - imports:[39m
+[12:37:40] [36m               : 	- NzFormModule[39m
+[12:37:40] [36m               : 	- NzInputModule[39m
+[12:37:40] [36m               : 	- TranslateModule[39m
+[12:37:40] [36m               : 	- NzAutocompleteModule[39m
+[12:37:40] [36m               : 	- CommonModule[39m
+[12:37:40] [36m               : 	- FormsModule[39m
+[12:37:40] [36m               : 	- NzIconModule[39m
+[12:37:40] [36m               : 	- ExtensionsModule[39m
+[12:37:40] [36m               : - providers:[39m
+[12:37:40] [36m               : 	- )[39m
+[12:37:40] [36mfound          : InputTextAreaAutocompleteOption[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/menu/menu.component.ts[39m
+[12:37:40] [36mfound          : MenuComponent[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/product-list/product-list.component.ts[39m
+[12:37:40] [36mfound          : ProductListComponent[39m
+[12:37:40] [36m               : - imports:[39m
+[12:37:40] [36m               : 	- CurrencyPipe[39m
+[12:37:40] [36m               : 	- FormsModule[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/prueba/prueba.component.ts[39m
+[12:37:40] [36mfound          : PruebaComponent[39m
+[12:37:40] [36m               : - imports:[39m
+[12:37:40] [36m               : 	- CommonModule[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/tabs/tabs.component.ts[39m
+[12:37:40] [36mfound          : TabsComponent[39m
+[12:37:40] [32mparsing        : C:/Users/sminaya/umh-angular-workspace/umh/src/app/components/user-card/user-card.component.ts[39m
+[12:37:40] [36mfound          : UserCardComponent[39m
+[12:37:40] [36m               : - imports:[39m
+[12:37:40] [36m               : 	- DatePipe[39m
+[12:37:40] [32m-------------------[39m
+[12:37:40] [32mProject statistics [39m
+[12:37:40] [32m- files        : 27[39m
+[12:37:40] [32m- module       : 1[39m
+[12:37:40] [32m- component    : 17[39m
+[12:37:40] [32m- interface    : 5[39m
+[12:37:40] [32m-------------------[39m
+[12:37:40] [32mPrepare components[39m
+[12:37:40] [32m AlertComponent has a templateUrl, include it[39m
+[12:37:40] [32m App has a templateUrl, include it[39m
+[12:37:40] [32m BadgeComponent has a templateUrl, include it[39m
+[12:37:40] [32m ButtonComponent has a templateUrl, include it[39m
+[12:37:40] [32m CheckboxComponent has a templateUrl, include it[39m
+[12:37:40] [32m DatepickerComponent has a templateUrl, include it[39m
+[12:37:40] [32m DropdownComponent has a templateUrl, include it[39m
+[12:37:40] [32m IconComponent has a templateUrl, include it[39m
+[12:37:40] [32m InputFieldComponent has a templateUrl, include it[39m
+[12:37:40] [32m InputNumberComponent has a templateUrl, include it[39m
+[12:37:40] [32m InputTextAreaComponent has styles, include them[39m
+[12:37:40] [32m MenuComponent has a templateUrl, include it[39m
+[12:37:40] [32m ProductListComponent has a templateUrl, include it[39m
+[12:37:40] [32m PruebaComponent has a templateUrl, include it[39m
+[12:37:40] [32m TabsComponent has a templateUrl, include it[39m
+[12:37:40] [32m UserCardComponent has a templateUrl, include it[39m
+[12:37:40] [32mPrepare modules[39m
+[12:37:40] [32mPrepare interfaces[39m
+[12:37:40] [32mPrepare miscellaneous[39m
+[12:37:40] [32mGenerating documentation in export format json[39m
+[12:37:40] [32mDocumentation generated in ./ in 2.484 seconds[39m
+info => Cleaning outputDir: [36m../../AppData/Local/Temp/chromatic--11748-XM3dKp4nz69B[39m
+
+info => Loading presets
+info => Building manager..
+info => Building preview..
+info Addon-docs: using MDX3
+info => Copying static files: [36msrc\assets[39m at [36m..\..\AppData\Local\Temp\chromatic--11748-XM3dKp4nz69B[39m
+info => Using implicit CSS loaders
+info => Using angular browser target options from "umh:build"
+info => Using angular project with "tsConfig:C:\Users\sminaya\umh-angular-workspace\umh\.storybook\tsconfig.json"
+info => Using default Webpack5 setup
+info => Output directory: C:/Users/sminaya/AppData/Local/Temp/chromatic--11748-XM3dKp4nz69B

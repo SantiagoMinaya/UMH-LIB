@@ -1,0 +1,149 @@
+.checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  cursor: pointer;
+  position: relative;
+
+  &.checkbox-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .checkbox-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:focus + .checkbox-box {
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+    }
+  }
+
+  .checkbox-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid #d1d5db;
+    border-radius: 0.375rem;
+    background-color: white;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+
+    .checkbox-icon {
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.2s ease;
+      color: white;
+    }
+  }
+
+  .checkbox-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .checkbox-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    line-height: 1.5;
+    margin-bottom: 0.25rem;
+  }
+
+  .checkbox-description {
+    display: block;
+    font-size: 0.75rem;
+    color: #6b7280;
+    line-height: 1.4;
+  }
+
+  .checkbox-required {
+    color: #ef4444;
+    font-weight: 600;
+    margin-left: 0.25rem;
+  }
+
+  // Estados
+  &.checkbox-checked {
+    .checkbox-box {
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      border-color: #3b82f6;
+
+      .checkbox-icon {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+
+  &:hover:not(.checkbox-disabled) {
+    .checkbox-box {
+      border-color: #3b82f6;
+      background-color: #f8fafc;
+    }
+
+    &.checkbox-checked .checkbox-box {
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+    }
+  }
+
+  // Tamaños
+  &.checkbox-small {
+    .checkbox-box {
+      width: 1rem;
+      height: 1rem;
+
+      .checkbox-icon {
+        width: 0.75rem;
+        height: 0.75rem;
+      }
+    }
+
+    .checkbox-label {
+      font-size: 0.75rem;
+    }
+
+    .checkbox-description {
+      font-size: 0.6875rem;
+    }
+  }
+
+  &.checkbox-large {
+    .checkbox-box {
+      width: 1.5rem;
+      height: 1.5rem;
+
+      .checkbox-icon {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
+    }
+
+    .checkbox-label {
+      font-size: 1rem;
+    }
+
+    .checkbox-description {
+      font-size: 0.875rem;
+    }
+  }
+
+  // Estado indeterminado
+  .checkbox-input:indeterminate + .checkbox-box {
+    background: linear-gradient(135deg, #6b7280, #4b5563);
+    border-color: #6b7280;
+
+    .checkbox-icon {
+      opacity: 1;
+      transform: scale(1);
+      color: white;
+    }
+  }
+}
