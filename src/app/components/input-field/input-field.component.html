@@ -1,7 +1,9 @@
 <nz-form-item>
-    <nz-form-label *ngIf="label" [nzFor]="name" [nzRequired]="isRequired">
-        {{ label }}
-    </nz-form-label>
+    @if (label) {
+        <nz-form-label [nzFor]="name" [nzRequired]="isRequired">
+            {{ label }}
+        </nz-form-label>
+    }
     <nz-form-control [nzErrorTip]="parsearError((errorMessage??'') | translate)??''" [nzValidateStatus]="ngControl?.control!">
         <nz-input-group
             [nzPrefix]="prefix ?? ''"
@@ -21,21 +23,22 @@
             />
         </nz-input-group>
         <nz-autocomplete #auto>
-            <ng-container *ngIf="!autocompleteLoadingOptions; else loadingTpl">
-                <nz-auto-option *ngFor="let option of autocompleteOptions" [nzValue]="option.value??''">
-                    <ng-container *ngIf="!autocompleteTemplate; else customTemplate">
-                        {{ option.label ?? option.value }}
-                    </ng-container>
-                    <ng-template #customTemplate>
-                        <ng-container *ngTemplateOutlet="autocompleteTemplate; context: { $implicit: option }"></ng-container>
-                    </ng-template>
-                </nz-auto-option>
-            </ng-container>
-            <ng-template #loadingTpl>
+            @if (!autocompleteLoadingOptions) {
+                @for (option of autocompleteOptions; track option.value) {
+                    <nz-auto-option [nzValue]="option.value??''">
+                        @if (!autocompleteTemplate) {
+                            {{ option.label ?? option.value }}
+                        } @else {
+                            <ng-container *ngTemplateOutlet="autocompleteTemplate; context: { $implicit: option }"></ng-container>
+                        }
+                    </nz-auto-option>
+                }
+            } @else {
                 <nz-auto-option [nzDisabled]="true" [nzValue]="''">
                     <nz-icon nzType="loading" nzSpin></nz-icon> {{ '$$$_cargando_$$$' | translate }}
                 </nz-auto-option>
-            </ng-template>
+            }
+
         </nz-autocomplete>
     </nz-form-control>
 </nz-form-item>

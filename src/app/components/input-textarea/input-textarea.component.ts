@@ -48,11 +48,13 @@ import { NzInputModule } from 'ng-zorro-antd/input';
     ],
     template: `
         <nz-form-item class="form-item-textarea">
-            <nz-form-label *ngIf="label" [nzFor]="name" [nzRequired]="isRequired">
+            @if (label) {
+                <nz-form-label [nzFor]="name" [nzRequired]="isRequired">
                 {{ label }}
-            </nz-form-label>
+                </nz-form-label>
+            }
             <nz-form-control [nzValidateStatus]="validateStatus">
-                <nz-input-group [nzPrefix]="prefix ?? ''" [nzSuffix]="sufix ?? ''" [ngStyle]="(prefix != null || sufix != null) ? {'padding': '0 20px'} : null">
+                <div class="textarea-wrapper">
                     <textarea nz-input
                         [ngModel]="value"
                         (ngModelChange)="handleInput($event)"
@@ -64,7 +66,7 @@ import { NzInputModule } from 'ng-zorro-antd/input';
                         [attr.maxlength]="maxlength"
                         [nzAutocomplete]="auto">
                     </textarea>
-                </nz-input-group>
+                </div>
                 <div class="textarea-info">
                     <span class="counter" *ngIf="showCharacterCount">
                         {{ (value?.length ?? 0) }}/{{ maxlength }}

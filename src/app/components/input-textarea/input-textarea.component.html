@@ -1,1 +1,47 @@
-<p>input-textarea works!</p>
+<nz-form-item class="form-item-textarea">
+    @if (label) {
+        <nz-form-label [nzFor]="name" [nzRequired]="isRequired">
+            {{ label }}
+        </nz-form-label>
+    }
+    <nz-form-control [nzValidateStatus]="validateStatus">
+        <textarea nz-input
+            [ngModel]="value"
+            (ngModelChange)="handleInput($event)"
+            [attr.name]="name"
+            [id]="name"
+            [rows]="rows"
+            [placeholder]="placeholder"
+            [disabled]="disabled"
+            [attr.maxlength]="maxlength"
+            [nzAutocomplete]="auto">
+        </textarea>
+        <div class="textarea-info">
+            @if (showCharacterCount) {
+                <span class="counter">
+                    {{ (value?.length ?? 0) }}/{{ maxlength }}
+                </span>
+            }
+            <span [class.visible]="!!errorMessage" class="error ant-form-item-explain-error">
+                {{ parsearError(errorMessage??'' | translate) }}
+            </span>
+        </div>
+        <nz-autocomplete #auto>
+            @if (!autocompleteLoadingOptions) {
+                @for (option of autocompleteOptions; track option.value) {
+                    <nz-auto-option [nzValue]="option.value">
+                        @if (!autocompleteTemplate) {
+                            {{ option.label ?? option.value }}
+                        } @else {
+                            <ng-container *ngTemplateOutlet="autocompleteTemplate; context: { $implicit: option }"></ng-container>
+                        }
+                    </nz-auto-option>
+                }
+            } @else {
+                <nz-auto-option [nzDisabled]="true">
+                    <nz-icon nzType="loading" nzSpin></nz-icon> {{ '$$$_cargando_$$$' | translate }}
+                </nz-auto-option>
+            }
+        </nz-autocomplete>
+    </nz-form-control>
+</nz-form-item>

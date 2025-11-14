@@ -1,7 +1,9 @@
 <nz-form-item>
-        <nz-form-label *ngIf="label" [nzFor]="name" [nzRequired]="isRequired">
-            {{ label }}
-        </nz-form-label>
+        @if (label) {
+            <nz-form-label [nzFor]="name" [nzRequired]="isRequired">
+                {{ label }}
+            </nz-form-label>
+        }
         <nz-form-control [nzErrorTip]="parsearError((errorMessage??'') | translate)??''" [nzValidateStatus]="ngControl?.control!">
             <nz-input-number
                 [ngModel]="value"
