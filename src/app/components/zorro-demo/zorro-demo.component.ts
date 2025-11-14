@@ -24,6 +24,7 @@ export class ZorroDemoComponent {
   @Input() buttonText: string = 'Click me';
   @Input() inputValue: string = '';
   @Input() showCard: boolean = true;
+  @Input() tagColor: string = 'blue';
   
   onButtonClick() {
     console.log('Button clicked!');

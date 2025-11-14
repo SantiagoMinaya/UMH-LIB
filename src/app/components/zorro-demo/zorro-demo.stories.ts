@@ -43,6 +43,11 @@ const meta: Meta<ZorroDemoComponent> = {
     showCard: {
       control: 'boolean',
       description: 'Mostrar como tarjeta o simple'
+    },
+    tagColor: {
+      control: 'select',
+      options: ['blue', 'green', 'red', 'orange', 'purple', 'cyan', 'magenta', 'yellow', 'lime', 'pink'],
+      description: 'Color de los tags'
     }
   }
 };
@@ -55,7 +60,8 @@ export const Default: Story = {
     title: 'Demo de Ng-Zorro',
     buttonText: 'Botón Principal',
     inputValue: '',
-    showCard: true
+    showCard: true,
+    tagColor: 'blue'
   }
 };
 
@@ -63,7 +69,8 @@ export const SimpleView: Story = {
   args: {
     title: 'Vista Simple',
     buttonText: 'Click aquí',
-    showCard: false
+    showCard: false,
+    tagColor: 'green'
   }
 };
 
@@ -72,6 +79,7 @@ export const WithInitialValue: Story = {
     title: 'Con Valor Inicial',
     buttonText: 'Procesar',
     inputValue: 'Texto de ejemplo',
-    showCard: true
+    showCard: true,
+    tagColor: 'red'
   }
 };
