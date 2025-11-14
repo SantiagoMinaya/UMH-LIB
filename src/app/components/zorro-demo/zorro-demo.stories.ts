@@ -44,10 +44,25 @@ const meta: Meta<ZorroDemoComponent> = {
       control: 'boolean',
       description: 'Mostrar como tarjeta o simple'
     },
-    tagColor: {
+    tagColor1: {
       control: 'select',
       options: ['blue', 'green', 'red', 'orange', 'purple', 'cyan', 'magenta', 'yellow', 'lime', 'pink'],
-      description: 'Color de los tags'
+      description: 'Color del Tag 1'
+    },
+    tagColor2: {
+      control: 'select',
+      options: ['blue', 'green', 'red', 'orange', 'purple', 'cyan', 'magenta', 'yellow', 'lime', 'pink'],
+      description: 'Color del Tag 2'
+    },
+    tagColor3: {
+      control: 'select',
+      options: ['blue', 'green', 'red', 'orange', 'purple', 'cyan', 'magenta', 'yellow', 'lime', 'pink'],
+      description: 'Color del Tag 3'
+    },
+    tagColor4: {
+      control: 'select',
+      options: ['blue', 'green', 'red', 'orange', 'purple', 'cyan', 'magenta', 'yellow', 'lime', 'pink'],
+      description: 'Color del Tag 4'
     }
   }
 };
@@ -61,7 +76,10 @@ export const Default: Story = {
     buttonText: 'Botón Principal',
     inputValue: '',
     showCard: true,
-    tagColor: 'blue'
+    tagColor1: 'blue',
+    tagColor2: 'green',
+    tagColor3: 'red',
+    tagColor4: 'orange'
   }
 };
 
@@ -70,7 +88,10 @@ export const SimpleView: Story = {
     title: 'Vista Simple',
     buttonText: 'Click aquí',
     showCard: false,
-    tagColor: 'green'
+    tagColor1: 'purple',
+    tagColor2: 'cyan',
+    tagColor3: 'magenta',
+    tagColor4: 'yellow'
   }
 };
 
@@ -80,6 +101,9 @@ export const WithInitialValue: Story = {
     buttonText: 'Procesar',
     inputValue: 'Texto de ejemplo',
     showCard: true,
-    tagColor: 'red'
+    tagColor1: 'lime',
+    tagColor2: 'pink',
+    tagColor3: 'blue',
+    tagColor4: 'green'
   }
 };
