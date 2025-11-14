@@ -1,0 +1,55 @@
+@if (showCard) {
+  <nz-card [nzTitle]="title" style="width: 400px;">
+    <div class="demo-content">
+      <!-- Botones de ng-zorro -->
+      <div class="button-group">
+        <button nz-button nzType="primary" (click)="onButtonClick()">
+          <span nz-icon nzType="check"></span>
+          {{ buttonText }}
+        </button>
+        
+        <button nz-button nzType="default">
+          <span nz-icon nzType="download"></span>
+          Descargar
+        </button>
+        
+        <button nz-button nzType="dashed" nzDanger>
+          <span nz-icon nzType="delete"></span>
+          Eliminar
+        </button>
+      </div>
+
+      <!-- Input de ng-zorro -->
+      <div class="input-group">
+        <nz-input-group nzPrefixIcon="user">
+          <input 
+            type="text" 
+            nz-input 
+            placeholder="Escribe algo aquí..." 
+            [(ngModel)]="inputValue"
+          />
+        </nz-input-group>
+      </div>
+
+      <!-- Tags de ng-zorro -->
+      <div class="tag-group">
+        <nz-tag nzColor="blue">Azul</nz-tag>
+        <nz-tag nzColor="green">Verde</nz-tag>
+        <nz-tag nzColor="red">Rojo</nz-tag>
+        <nz-tag nzColor="orange">Naranja</nz-tag>
+      </div>
+
+      <!-- Valor del input -->
+      @if (inputValue) {
+        <div class="input-display">
+          <strong>Valor ingresado:</strong> {{ inputValue }}
+        </div>
+      }
+    </div>
+  </nz-card>
+} @else {
+  <div class="simple-demo">
+    <h3>{{ title }}</h3>
+    <button nz-button nzType="primary">{{ buttonText }}</button>
+  </div>
+}
