@@ -21,14 +21,13 @@
 
       <!-- Input de ng-zorro -->
       <div class="input-group">
-        <nz-input-group nzPrefixIcon="user">
-          <input 
-            type="text" 
-            nz-input 
-            placeholder="Escribe algo aquí..." 
-            [(ngModel)]="inputValue"
-          />
-        </nz-input-group>
+        <input 
+          type="text" 
+          nz-input 
+          nzPrefix="user"
+          placeholder="Escribe algo aquí..." 
+          [(ngModel)]="inputValue"
+        />
       </div>
 
       <!-- Tags de ng-zorro -->
